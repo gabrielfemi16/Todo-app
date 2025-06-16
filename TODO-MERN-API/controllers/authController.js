@@ -122,7 +122,7 @@ const loginPost = async (req, res) => {
         isAdmin: user.isAdmin,
         email: user.email,
         username: user.username,
-        image: user.image
+        image: user.image,
       },
       process.env.JWT_SECRET,
       { expiresIn: "1d" }
@@ -132,6 +132,10 @@ const loginPost = async (req, res) => {
     res.cookie("jwtToken", accessToken, {
       httpOnly: true,
       maxAge: maxAge * 1000,
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+      domain: "https://gabs-todo-mern-client.onrender.com",
     });
 
     res.status(200).json({ message: "Login successful" });
