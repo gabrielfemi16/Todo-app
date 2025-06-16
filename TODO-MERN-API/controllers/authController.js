@@ -135,7 +135,6 @@ const loginPost = async (req, res) => {
       httpOnly: true,
       secure: true,
       sameSite: "none",
-      domain: "https://gabs-todo-mern-client.onrender.com",
     });
 
     res.status(200).json({ message: "Login successful" });

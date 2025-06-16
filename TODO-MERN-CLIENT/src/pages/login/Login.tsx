@@ -10,8 +10,10 @@ const Login = () => {
   const [password, setPassword] = useState("");
   useEffect(() => {
     document.body.classList.add("LoginPage");
+    document.title = "login page";
     return () => {
       document.body.classList.remove("LoginPage");
+      document.title = "";
     };
   }, []);
 
