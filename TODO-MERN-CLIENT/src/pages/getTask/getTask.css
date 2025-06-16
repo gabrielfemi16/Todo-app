@@ -1,0 +1,83 @@
+.task-container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow-y: auto;
+    max-height: 400px;
+    &::-webkit-scrollbar{
+        background-color: rgb(20, 27, 45);
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: rgb(241, 185, 183);
+    }
+}
+
+.task-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.task-item:hover{
+    background-color: #30385b;
+}
+
+.task-info h3{
+    margin: 0;
+}
+
+.task-info p{
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+}
+
+.task-action button{
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.edit-btn{
+    background: #4caf50;
+    color: white;
+}
+
+.delete-btn{
+    background: #e74c3c;
+    color: white;
+}
+
+.edit-btn:hover{
+    background: #388e3c;
+}
+
+.delete-btn:hover{
+    background: #c0392b;
+}
+
+.complete-btn{
+    background: #ffa500;
+    color: white;
+}
+
+.complete-btn:hover{
+    background: #cc8400;
+}

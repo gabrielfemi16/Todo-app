@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: "Poppins", sans-serif;*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*light - colors */
+.white_text {
+  color: #000;
+}
+
+.white_text1 {
+  color: #000;
+}
+
+.lightSalmon_text1 {
+  color: rgb(220, 120, 120);
+}
+
+.lightSalmon_text {
+  color: rgb(200, 80, 80);
+}
+
+.darkBlue_text {
+  color: rgb(40, 60, 120);
+}
+
+.darkestBlue_text {
+  color: rgb(20, 40, 80);
+}
+
+.lightSalmon_bg {
+  background-color: rgb(255, 220, 220);
+}
+
+.darkBlue_bg {
+  background-color: rgb(220, 230, 220);
+}
+
+.darkestBlue_bg {
+  background-color: rgb(190, 210, 255);
+}
+
+/*flex*/
+.flex_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.flex_row1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mb1 {
+  margin-bottom: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.errorMsgs {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.success-toast {
+  background-color: #28a745;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+/*dark - colors */
+.dark .white_text {
+  color: rgb(248, 220, 219);
+}
+
+.dark .white_text1 {
+  color: white;
+}
+
+.dark .lightSalmon_text1 {
+  color: rgb(255, 190, 190);
+}
+
+.dark .lightSalmon_text {
+  color: rgb(255, 160, 190);
+}
+
+.dark .darkBlue_text {
+  color: rgb(200, 200, 200);
+}
+
+.dark .darkestBlue_text {
+  color: rgb(180, 180, 180);
+}
+
+.dark .lightSalmon_bg {
+  background-color: rgb(90, 40, 40);
+}
+
+.dark .darkBlue_bg {
+  background-color: rgb(30, 30, 30);
+}
+
+.dark .darkestBlue_bg {
+  background-color: rgb(20, 20, 20);
+}
+
+.dark .errorMsgs {
+  background-color: rgba(255, 100, 100, 0.15);
+  color: #ff6b6b;
+}
+
+.dark .success-toast {
+  background-color: #256e34;
+  color: white;
+}

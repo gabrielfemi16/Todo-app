@@ -1,0 +1,27 @@
+.DashboardPage {
+  background-color: rgb(16, 22, 36);
+}
+
+.homePage {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.homePage .mainPage {
+  padding: 0 30px;
+}
+
+.homePage.closed {
+  grid-template-columns: 0fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .homePage {
+    grid-template-columns: 0fr 1fr;
+  }
+
+  .homePage .mainPage {
+    grid-column: 1/3;
+  }
+}
