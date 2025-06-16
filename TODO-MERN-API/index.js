@@ -20,7 +20,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://gabs-todo-mern-client.onrender.com",
+  ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true, //Enable credentails(cookies, auththorization headers, etc.)
   optionsSuccessStatus: 204, //Some legacy browsers(IE11, various smartTvs)choke on 204
